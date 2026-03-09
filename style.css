@@ -111,19 +111,19 @@ body[data-theme='light'] {
     --shadow-card: 0 12px 32px -4px rgba(8, 38, 72, 0.08);
     --shadow-glow: 0 0 40px -10px var(--accent-glow);
     --project-hover-shadow: 0 10px 22px rgba(8, 38, 72, 0.1), 0 0 0 1px rgba(2, 136, 209, 0.16);
-    --project-overlay-bg: linear-gradient(170deg, rgba(255, 255, 255, 0.08), rgba(218, 235, 247, 0.28) 76%);
-    --project-overlay-bg-mobile: linear-gradient(170deg, rgba(255, 255, 255, 0.14), rgba(218, 235, 247, 0.34) 78%);
-    --project-overlay-coating: rgba(255, 255, 255, 0.3);
-    --project-overlay-coating-strong: rgba(255, 255, 255, 0.44);
-    --project-overlay-glow: rgba(2, 136, 209, 0.08);
-    --project-overlay-sheen: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.02) 56%);
-    --project-overlay-highlight: radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.28), transparent 46%);
-    --project-overlay-blur: 5px;
-    --project-overlay-hover-blur: 7px;
-    --project-overlay-sheen-opacity: .24;
-    --project-overlay-highlight-opacity: .32;
-    --project-title-on-overlay: #0f172a;
-    --project-text-on-overlay: #2c4a69;
+    --project-overlay-bg: linear-gradient(168deg, rgba(248, 252, 255, 0.62), rgba(232, 243, 251, 0.78) 78%);
+    --project-overlay-bg-mobile: linear-gradient(168deg, rgba(248, 252, 255, 0.68), rgba(232, 243, 251, 0.82) 80%);
+    --project-overlay-coating: rgba(255, 255, 255, 0.5);
+    --project-overlay-coating-strong: rgba(255, 255, 255, 0.72);
+    --project-overlay-glow: rgba(2, 136, 209, 0.06);
+    --project-overlay-sheen: linear-gradient(135deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.02) 58%);
+    --project-overlay-highlight: radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.32), transparent 48%);
+    --project-overlay-blur: 3px;
+    --project-overlay-hover-blur: 4px;
+    --project-overlay-sheen-opacity: .18;
+    --project-overlay-highlight-opacity: .24;
+    --project-title-on-overlay: #10233a;
+    --project-text-on-overlay: #315372;
     --nav-scrolled-bg: rgba(242, 247, 253, 0.88);
     --skill-shadow: 0 4px 16px rgba(8, 38, 72, 0.04);
     --skill-shadow-hover: 0 16px 32px rgba(8, 38, 72, 0.08);
@@ -1146,7 +1146,7 @@ body[data-theme='light'] #skills .skill-card:hover {
 /* --- Projects --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: var(--grid-gap);
     margin-top: 28px;
 }
@@ -1235,12 +1235,12 @@ body[data-theme='light'] #skills .skill-card:hover {
 }
 
 .project-details {
-    width: min(86%, 330px);
+    width: min(88%, 360px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 11px;
+    gap: 12px;
     text-align: center;
     transition: transform .82s cubic-bezier(0.16, 1, 0.3, 1), opacity .72s cubic-bezier(0.16, 1, 0.3, 1);
     opacity: 0;
@@ -1303,7 +1303,7 @@ body[data-theme='light'] #skills .skill-card:hover {
 
 .project-details h3 {
     font-family: var(--font);
-    font-size: 1.15rem;
+    font-size: 1.24rem;
     font-weight: 700;
     color: var(--project-title-on-overlay);
     line-height: 1.25;
@@ -1311,11 +1311,11 @@ body[data-theme='light'] #skills .skill-card:hover {
 }
 
 .project-details p {
-    font-size: .88rem;
+    font-size: .95rem;
     color: var(--project-text-on-overlay);
-    line-height: 1.5;
+    line-height: 1.56;
     margin: 0;
-    max-width: 30ch;
+    max-width: 33ch;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -1334,6 +1334,11 @@ body[data-theme='light'] #skills .skill-card:hover {
     justify-content: center;
     gap: 10px;
     margin: 0;
+}
+
+.project-actions .btn-sm {
+    padding: 9px 20px;
+    font-size: .86rem;
 }
 
 .project-actions .btn-sm:not(.btn-outline-light) {
@@ -1361,13 +1366,19 @@ body[data-theme='light'] #skills .skill-card:hover {
 
 body[data-theme='light'] .project-overlay .btn-outline-light {
     border-color: rgba(2, 136, 209, 0.28);
-    color: #0f172a;
-    background: rgba(255, 255, 255, 0.22);
+    color: #10233a;
+    background: rgba(255, 255, 255, 0.58);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 body[data-theme='light'] .project-overlay .btn-outline-light:hover {
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.74);
+}
+
+body[data-theme='light'] .project-overlay .project-tags span {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid rgba(2, 136, 209, 0.18);
+    color: #0a78b7;
 }
 
 .project-info {
@@ -1406,9 +1417,9 @@ body[data-theme='light'] .project-overlay .btn-outline-light:hover {
 }
 
 .project-tags span {
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: var(--radius-full);
-    font-size: .72rem;
+    font-size: .78rem;
     font-weight: 500;
     background: var(--accent-soft);
     color: var(--accent);

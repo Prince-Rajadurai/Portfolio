@@ -41,7 +41,7 @@
             categoryLabel: 'Full Stack',
             title: 'SmartDrive',
             description: 'A React-based file management application featuring nested folders, file uploads, and a clean user interface.',
-            image: 'images/smartdrive_1773052178017.png',
+            image: 'images/smartdrive_pro.svg',
             alt: 'SmartDrive',
             tags: ['React', 'API'],
             links: [{ label: 'Client', href: 'https://github.com/Prince-Rajadurai/WorkDriveFrontend', outline: true }, { label: 'Server', href: 'https://github.com/Prince-Rajadurai/WorkDrive_BackEnd', outline: true }]
@@ -51,7 +51,7 @@
             categoryLabel: 'Full Stack',
             title: 'Todo List',
             description: 'A backend task manager with CRUD APIs, input validation, and persistent data handling.',
-            image: 'images/todo_list_1773052196652.png',
+            image: 'images/todo_pro.svg',
             alt: 'Todo List',
             tags: ['Node.js', 'Express', 'MySQL'],
             links: [
@@ -63,7 +63,7 @@
             categoryLabel: 'Full Stack',
             title: 'Planet',
             description: 'A Node.js and Express backend providing a RESTful API for managing planetary data and celestial resources.',
-            image: 'images/planet_1773052214815.png',
+            image: 'images/planet_pro.svg',
             alt: 'Planet',
             tags: ['Node.js', 'Express'],
             links: [{ label: 'Code', href: 'https://github.com/Prince-Rajadurai/Planet', outline: true }]
@@ -74,7 +74,7 @@
             categoryLabel: 'Java',
             title: 'Word Connect',
             description: 'A Java-based word game where players connect letters to form valid words, backed by a MySQL database for progression.',
-            image: 'images/word_connect_1773052228345.png',
+            image: 'images/word_connect_pro.svg',
             alt: 'Word Connect',
             tags: ['Java', 'DSA', 'MySQL'],
             links: [{ label: 'Code', href: 'https://github.com/Prince-Rajadurai/Word-Connect-With-Database', outline: true }]
@@ -84,7 +84,7 @@
             categoryLabel: 'Java',
             title: 'Priority Queue',
             description: 'A heap-based priority queue implementation with efficient insertion and removal operations.',
-            image: 'images/priority_queue_1773052244083.png',
+            image: 'images/priority_queue_pro.svg',
             alt: 'Priority Queue',
             tags: ['Java', 'DSA', 'MySQL'],
             links: [{ label: 'Code', href: 'https://github.com/Prince-Rajadurai/Implementation-of-Priority-Queue', outline: true }]
@@ -94,7 +94,7 @@
             categoryLabel: 'Java',
             title: 'Word Connect without DB',
             description: 'A standalone desktop version of the Word Connect game built in Java, operating entirely via local memory without an external database.',
-            image: 'images/word_connect_desktop_1773052290905.png',
+            image: 'images/word_connect_desktop_pro.svg',
             alt: 'Word Connect without DB',
             tags: ['Java', 'OOPs'],
             links: [{ label: 'Code', href: 'https://github.com/Prince-Rajadurai/Word-Connect', outline: true }]
@@ -105,7 +105,7 @@
             categoryLabel: 'JS',
             title: 'Elevate',
             description: 'An interactive productivity app designed to support learning, focus, and daily progress.',
-            image: 'images/elevate_app_1773052307838.png',
+            image: 'images/elevate_pro.svg',
             alt: 'Elevate',
             tags: ['HTML', 'CSS', 'JavaScript'],
             links: [
@@ -118,7 +118,7 @@
             categoryLabel: 'JS',
             title: 'Mini Quiz App',
             description: 'A lightweight JavaScript quiz application featuring dynamic questions, score tracking, and immediate feedback.',
-            image: 'images/mini_quiz_1773052321639.png',
+            image: 'images/mini_quiz_pro.svg',
             alt: 'Mini Quiz App',
             tags: ['HTML', 'CSS', 'JavaScript'],
             links: [{ label: 'Live Demo', href: 'https://prince-rajadurai.github.io/Mini-Quizz/' }, { label: 'Code', href: 'https://github.com/Prince-Rajadurai/Mini-Quizz', outline: true }]
@@ -128,7 +128,7 @@
             categoryLabel: 'JS',
             title: 'Rock, Paper, Scissors game',
             description: 'A classic Rock, Paper, Scissors game built with vanilla JavaScript, featuring an interactive UI and score tracking.',
-            image: 'images/rps_game_1773052336963.png',
+            image: 'images/rps_pro.svg',
             alt: 'Rock, Paper, Scissors game',
             tags: ['HTML', 'CSS', 'JavaScript'],
             links: [{ label: 'Live Demo', href: 'https://prince-rajadurai.github.io/Rock-Paper-Scissor-game/' }, { label: 'Code', href: 'https://github.com/Prince-Rajadurai/Rock-Paper-Scissor-game', outline: true }]
@@ -139,7 +139,7 @@
             categoryLabel: 'HTML/CSS',
             title: 'Harry Potter',
             description: 'A magical, themed website utilizing advanced CSS for responsive design and immersive visual storytelling.',
-            image: 'images/harry_potter_1773052352797.png',
+            image: 'images/harry_potter_pro.svg',
             alt: 'Harry Potter',
             tags: ['HTML', 'CSS'],
             links: [
@@ -152,7 +152,7 @@
             categoryLabel: 'HTML/CSS',
             title: 'Professional Page',
             description: 'A responsive one-page site with clear content flow and strong visual hierarchy.',
-            image: 'images/professional_page_1773052423678.png',
+            image: 'images/professional_page_pro.svg',
             alt: 'Professional Page',
             tags: ['HTML', 'CSS'],
             links: [{ label: 'Live Demo', href: 'https://prince-rajadurai.github.io/Professional-Design/' }, { label: 'Code', href: 'https://github.com/Prince-Rajadurai/Professional-Design', outline: true }]
@@ -162,7 +162,7 @@
             categoryLabel: 'HTML/CSS',
             title: 'Grid Layouting',
             description: 'A responsive layout demonstration showcasing the power of CSS Grid and Flexbox for complex UI structures.',
-            image: 'images/grid_layouting_1773052442394.png',
+            image: 'images/grid_layouting_pro.svg',
             alt: 'Grid Layouting',
             tags: ['HTML', 'CSS'],
             links: [{ label: 'Live Demo', href: 'https://prince-rajadurai.github.io/Grid-Layouting/' }, { label: 'Code', href: 'https://github.com/Prince-Rajadurai/Grid-Layouting', outline: true }]
@@ -173,7 +173,7 @@
             categoryLabel: 'Scratch',
             title: 'Elevate (Scratch)',
             description: 'A Scratch version of Elevate built with blocks, sprites, and interactive animations.',
-            image: 'images/elevate_scratch_1773052457813.png',
+            image: 'images/elevate_scratch_pro.svg',
             alt: 'Elevate (Scratch)',
             tags: ['Scratch', 'Math Logic'],
             links: [{ label: 'Live Demo', href: 'https://scratch.mit.edu/projects/1192739235/' }]
@@ -183,7 +183,7 @@
             categoryLabel: 'Scratch',
             title: 'Doreamon Bird',
             description: 'A fun Scratch game inspired by Flappy Bird featuring Doraemon, with gravity mechanics and increasing difficulty.',
-            image: 'images/doreamon_bird_1773052472941.png',
+            image: 'images/doreamon_bird_pro.svg',
             alt: 'Doreamon Bird',
             tags: ['Scratch', 'Game Logic'],
             links: [{ label: 'Live Demo', href: 'https://scratch.mit.edu/projects/1190004498/' }]
@@ -193,7 +193,7 @@
             categoryLabel: 'Scratch',
             title: 'Day Finder',
             description: 'A useful Scratch utility that calculates the exact day of the week for any given date using mathematical algorithms.',
-            image: 'images/day_finder_1773052488406.png',
+            image: 'images/day_finder_pro.svg',
             alt: 'Day Finder',
             tags: ['Scratch', 'Calculations'],
             links: [{ label: 'Live Demo', href: 'https://scratch.mit.edu/projects/1187276716/' }]
