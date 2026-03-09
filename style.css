@@ -159,6 +159,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
     font-size: 18px;
+    zoom: 1.1;
     /* Scales up 1rem from 16px to 18px */
 }
 
@@ -2209,5 +2210,37 @@ textarea {
     .btn {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* Desktop: match the comfortable visual scale users see around 110% browser zoom */
+@media(min-width:1025px) {
+    .project-overlay {
+        padding: 22px;
+    }
+
+    .project-details {
+        width: min(90%, 390px);
+        gap: 14px;
+    }
+
+    .project-details h3 {
+        font-size: 1.34rem;
+    }
+
+    .project-details p {
+        font-size: 1.02rem;
+        line-height: 1.6;
+        max-width: 34ch;
+    }
+
+    .project-tags span {
+        padding: 5px 13px;
+        font-size: .82rem;
+    }
+
+    .project-actions .btn-sm {
+        padding: 10px 22px;
+        font-size: .9rem;
     }
 }
