@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prince RajaDurai | Full-Stack Developer building reliable and user-focused web applications.">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme"
+                    title="Switch to light theme">
+                    <img id="themeIcon" class="theme-icon" src="images/moon.svg" alt="Moon icon">
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1 class="hero-title reveal">Hi, I'm <br /><span class="accent">J. Prince RajaDurai</span></h1>
+                <div class="hero-role-shell reveal">
+                    <p class="hero-role" id="typingRole">Full-Stack Engineer</p>
+                    <div class="hero-role-pips" id="rolePips" aria-hidden="true"></div>
+                </div>
+                <p class="hero-desc reveal">I build reliable, user-friendly web applications that solve real-world
+                    problems and deliver measurable results.</p>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/Prince-Rajadurai" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="hero-image-frame">
+                    <!-- Replace images/profile.png with your own photo -->
+                    <img src="images/profile.jpg" alt="Prince" id="profileImg">
+                    <div class="hero-image-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MINDSET ============ -->
+    <section class="section section-alt" id="mindset">
+        <div class="container">
+            <span class="section-tag reveal">Philosophy</span>
+            <h2 class="section-title reveal">My <span class="accent">Mindset</span></h2>
+            <div class="mindset-grid">
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">🎯</div>
+                    <h3>Problem First</h3>
+                    <p>I start by understanding the problem, then choose the right tools. This keeps solutions
+                        practical and focused.</p>
+                </div>
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">🔄</div>
+                    <h3>Continuous Learning</h3>
+                    <p>I keep learning to stay current with tools and best practices, then apply that knowledge to
+                        real projects.</p>
+                </div>
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">✨</div>
+                    <h3>Clean Code</h3>
+                    <p>I write clean, readable code that is easy to review, maintain, and scale over time.</p>
+                </div>
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">🤝</div>
+                    <h3>Collaboration</h3>
+                    <p>I communicate clearly, share progress, and welcome feedback to build better results as a team.
+                    </p>
+                </div>
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">⚡</div>
+                    <h3>Deliver & Improve</h3>
+                    <p>I deliver working versions early, gather feedback, and improve step by step.</p>
+                </div>
+                <div class="mindset-card reveal">
+                    <div class="mindset-icon">🌍</div>
+                    <h3>User Focus</h3>
+                    <p>I measure success by user value. If it solves a real need and saves time, it is a strong
+                        outcome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CODEWARS ============ -->
+    <section class="section" id="codewars">
+        <div class="container">
+            <span class="section-tag reveal">Competitive Coding</span>
+            <h2 class="section-title reveal">My <span class="accent">Codewars</span> Progress</h2>
+            <p class="section-desc reveal">I practice coding challenges regularly to improve logic and coding quality.
+            </p>
+
+            <div class="codewars-section">
+                <div class="codewars-badge-area reveal">
+                    <div class="codewars-badge-card">
+                        <div class="codewars-badge-header">
+                            <span class="cw-sword">⚔️</span>
+                            <h3>Codewars Profile</h3>
+                        </div>
+                        <div class="codewars-badge-embed">
+                            <img src="https://www.codewars.com/users/Prince%20Rajadurai/badges/large"
+                                alt="Codewars Badge" class="cw-badge-img">
+                        </div>
+                        <p class="cw-username">@Prince Rajadurai</p>
+                        <a href="https://www.codewars.com/users/Prince%20Rajadurai" target="_blank"
+                            class="btn btn-primary cw-profile-btn">
+                            View Full Profile →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="codewars-stats-area reveal">
+                    <div class="cw-stat-card">
+                        <div class="cw-stat-icon">🏆</div>
+                        <div class="cw-stat-content">
+                            <h4>Honor Points</h4>
+                            <p>Earned by solving challenges and sharing useful approaches with the community.</p>
+                        </div>
+                    </div>
+                    <div class="cw-stat-card">
+                        <div class="cw-stat-icon">🎯</div>
+                        <div class="cw-stat-content">
+                            <h4>Kata Completed</h4>
+                            <p>Completed across different difficulty levels to strengthen core problem-solving skills.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cw-stat-card">
+                        <div class="cw-stat-icon">💻</div>
+                        <div class="cw-stat-content">
+                            <h4>Languages</h4>
+                            <p>Practice in Java, JavaScript, and other languages to stay flexible across problem types.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cw-stat-card">
+                        <div class="cw-stat-icon">📈</div>
+                        <div class="cw-stat-content">
+                            <h4>Continuous Growth</h4>
+                            <p>Consistent practice helps me improve speed, accuracy, and structured thinking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <span class="section-tag reveal">Skills</span>
+            <h2 class="section-title reveal">Technologies I <span class="accent">know</span></h2>
+            <p class="section-desc reveal">Core technologies I use to build scalable and maintainable applications.</p>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ TOOLS ============ -->
+    <section class="section section-alt" id="tools">
+        <div class="container">
+            <span class="section-tag reveal">Toolkit</span>
+            <h2 class="section-title reveal">Tools I <span class="accent">use</span></h2>
+            <p class="section-desc reveal">Tools I use daily for development, debugging, collaboration, and research.
+            </p>
+            <div class="skills-grid" id="toolsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <span class="section-tag reveal">Portfolio</span>
+            <h2 class="section-title reveal">My <span class="accent">Projects</span></h2>
+            <p class="section-desc reveal">Browse projects by technology. Click any card to view details.</p>
+
+            <div class="project-filters reveal" id="projectFilters">
+                <button class="project-filter-btn active" type="button" data-filter="all">All</button>
+                <button class="project-filter-btn" type="button" data-filter="fullstack">Full Stack</button>
+                <button class="project-filter-btn" type="button" data-filter="java">Java</button>
+                <button class="project-filter-btn" type="button" data-filter="js">JS</button>
+                <button class="project-filter-btn" type="button" data-filter="htmlcss">HTML/CSS</button>
+                <button class="project-filter-btn" type="button" data-filter="scratch">Scratch</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <span class="section-tag reveal">Contact</span>
+            <h2 class="section-title reveal">Let's build <span class="accent">together</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <small>Emp. ID</small>
+                            <p>ZSTTK - 430/25</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <small>Email</small>
+                            <p>prince.rajadurai@zohocorp.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <small>Location</small>
+                            <p>Tenkasi, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-visual reveal">
+                    <div class="contact-visual-media">
+                        <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
+                            alt="Developer collaboration animation" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta reveal">
+                <h3>Have a project idea?</h3>
+                <p>I am open to meaningful collaborations. Let's discuss your goals and build a strong solution
+                    together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 J. Prince RajaDurai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
