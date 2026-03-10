@@ -1,36 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sun">
   <defs>
-    <radialGradient id="sunCore" cx="40%" cy="35%" r="60%">
-      <stop offset="0%" stop-color="#fff7c2"/>
-      <stop offset="55%" stop-color="#ffd75e"/>
-      <stop offset="100%" stop-color="#ff9d1a"/>
+    <!-- Radial gradient for the sun body and rays, matching the moon's style -->
+    <radialGradient id="sunBody" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="30%" stop-color="#fde68a"/>
+      <stop offset="65%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
     </radialGradient>
-    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffcc4d" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#ffcc4d" stop-opacity="0"/>
+    
+    <!-- Outer glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softBlur" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="1.8"/>
+    
+    <!-- Blur for the outer glow and rays -->
+    <filter id="sunBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2"/>
     </filter>
-    <linearGradient id="ray" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffe27a"/>
-      <stop offset="100%" stop-color="#ff9f2f"/>
-    </linearGradient>
+    <filter id="rayBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
   </defs>
 
-  <circle cx="32" cy="32" r="26" fill="url(#sunGlow)" filter="url(#softBlur)"/>
+  <!-- Glowing background effect -->
+  <circle cx="32" cy="32" r="26" fill="url(#sunGlow)" filter="url(#sunBlur)"/>
 
-  <g fill="none" stroke="url(#ray)" stroke-width="3.2" stroke-linecap="round">
-    <path d="M32 5v8"/>
-    <path d="M32 51v8"/>
-    <path d="M5 32h8"/>
-    <path d="M51 32h8"/>
-    <path d="M12.9 12.9l5.8 5.8"/>
-    <path d="M45.3 45.3l5.8 5.8"/>
-    <path d="M12.9 51.1l5.8-5.8"/>
-    <path d="M45.3 18.7l5.8-5.8"/>
+  <!-- Sun Rays (Large) -->
+  <g fill="url(#sunBody)" filter="url(#rayBlur)">
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(45 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(90 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(135 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(180 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(225 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(270 32 32)" />
+    <path d="M 32,4  C 34.5,12 36.5,16 36.5,20 C 32,18 32,18 27.5,20 C 27.5,16 29.5,12 32,4 Z" transform="rotate(315 32 32)" />
   </g>
 
-  <circle cx="32" cy="32" r="14.5" fill="url(#sunCore)" stroke="#ffb134" stroke-width="1.5"/>
-  <ellipse cx="27.5" cy="26.5" rx="5.2" ry="3.2" fill="#fff4be" opacity="0.75"/>
+  <!-- Sun Rays (Small) -->
+  <g fill="url(#sunBody)" filter="url(#rayBlur)" opacity="0.85">
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(22.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(67.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(112.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(157.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(202.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(247.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(292.5 32 32)" />
+    <path d="M 32,8 C 34,14 35,17 35,21 C 32,19 32,19 29,21 C 29,17 30,14 32,8 Z" transform="rotate(337.5 32 32)" />
+  </g>
+
+  <!-- Main sun body with gradient -->
+  <circle cx="32" cy="32" r="15" fill="url(#sunBody)"/>
+  
+  <!-- Subtle inner stroke for crisp 3D edge -->
+  <circle cx="32" cy="32" r="14.5" fill="none" stroke="#fef3c7" stroke-opacity="0.9" stroke-width="1.5"/>
+  
+  <!-- Subtle bright spots mimicking the texture and style of the moon -->
+  <g fill="#fffbeb" opacity="0.6">
+    <ellipse cx="28" cy="24" rx="4" ry="2.5" opacity="0.5" filter="url(#rayBlur)"/>
+    <ellipse cx="36" cy="38" rx="5" ry="3" opacity="0.3" filter="url(#rayBlur)"/>
+  </g>
 </svg>

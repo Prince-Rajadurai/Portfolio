@@ -159,7 +159,6 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
     font-size: 18px;
-    zoom: 1.1;
     /* Scales up 1rem from 16px to 18px */
 }
 
@@ -990,6 +989,12 @@ body[data-theme='light'] .hero-role {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mindset-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--accent);
 }
 
 .mindset-card h3 {
@@ -2215,6 +2220,10 @@ textarea {
 
 /* Desktop: match the comfortable visual scale users see around 110% browser zoom */
 @media(min-width:1025px) {
+    html {
+        zoom: 1.1;
+    }
+
     .project-overlay {
         padding: 22px;
     }
