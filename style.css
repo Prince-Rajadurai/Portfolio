@@ -377,7 +377,7 @@ textarea {
 .btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 13px 30px;
     border-radius: var(--radius-full);
     font-weight: 600;
@@ -1574,7 +1574,7 @@ body[data-theme='light'] .project-overlay .project-tags span {
     margin-top: 4px;
     background: linear-gradient(135deg, var(--cw-accent), var(--cw-accent-2));
     border: none;
-    width: 100%;
+    width: 75%;
     justify-content: center;
 }
 
