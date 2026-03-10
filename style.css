@@ -1255,16 +1255,28 @@ body[data-theme='light'] #skills .skill-card:hover {
 }
 
 /* 1st Column: Slide in from Left */
+.project-card:nth-child(3n+1) {
+    --child-slide: translateX(-14px);
+}
+
 .project-card:nth-child(3n+1) .project-details {
     transform: translateX(-40px);
 }
 
 /* 2nd Column: Slide in from Bottom */
+.project-card:nth-child(3n+2) {
+    --child-slide: translateY(14px);
+}
+
 .project-card:nth-child(3n+2) .project-details {
     transform: translateY(40px);
 }
 
 /* 3rd Column: Slide in from Right */
+.project-card:nth-child(3n+3) {
+    --child-slide: translateX(14px);
+}
+
 .project-card:nth-child(3n+3) .project-details {
     transform: translateX(40px);
 }
@@ -1279,7 +1291,7 @@ body[data-theme='light'] #skills .skill-card:hover {
 .project-overlay .project-tags,
 .project-actions {
     opacity: 0;
-    transform: translateY(14px);
+    transform: var(--child-slide, translateY(14px));
     transition: opacity .45s var(--ease-out), transform .58s var(--ease-out);
 }
 
@@ -1288,7 +1300,7 @@ body[data-theme='light'] #skills .skill-card:hover {
 .project-card:hover .project-overlay .project-tags,
 .project-card:hover .project-actions {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
 }
 
 .project-card:hover .project-details h3 {
