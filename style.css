@@ -1252,33 +1252,53 @@ body[data-theme='light'] #skills .skill-card:hover {
     opacity: 0;
     position: relative;
     z-index: 1;
-}
-
-/* 1st Column: Slide in from Left */
-.project-card:nth-child(3n+1) {
-    --child-slide: translateX(-14px);
-}
-
-.project-card:nth-child(3n+1) .project-details {
-    transform: translateX(-40px);
-}
-
-/* 2nd Column: Slide in from Bottom */
-.project-card:nth-child(3n+2) {
-    --child-slide: translateY(14px);
-}
-
-.project-card:nth-child(3n+2) .project-details {
     transform: translateY(40px);
 }
 
-/* 3rd Column: Slide in from Right */
-.project-card:nth-child(3n+3) {
-    --child-slide: translateX(14px);
+/* Tablet: 2 Columns */
+@media(min-width: 769px) and (max-width: 1024px) {
+    .project-card:nth-child(2n+1) {
+        --child-slide: translateX(-14px);
+    }
+
+    .project-card:nth-child(2n+1) .project-details {
+        transform: translateX(-40px);
+    }
+
+    .project-card:nth-child(2n) {
+        --child-slide: translateX(14px);
+    }
+
+    .project-card:nth-child(2n) .project-details {
+        transform: translateX(40px);
+    }
 }
 
-.project-card:nth-child(3n+3) .project-details {
-    transform: translateX(40px);
+/* Desktop: 3 Columns */
+@media(min-width: 1025px) {
+    .project-card:nth-child(3n+1) {
+        --child-slide: translateX(-14px);
+    }
+
+    .project-card:nth-child(3n+1) .project-details {
+        transform: translateX(-40px);
+    }
+
+    .project-card:nth-child(3n+2) {
+        --child-slide: translateY(14px);
+    }
+
+    .project-card:nth-child(3n+2) .project-details {
+        transform: translateY(40px);
+    }
+
+    .project-card:nth-child(3n+3) {
+        --child-slide: translateX(14px);
+    }
+
+    .project-card:nth-child(3n+3) .project-details {
+        transform: translateX(40px);
+    }
 }
 
 .project-card:hover .project-details {
@@ -2152,6 +2172,15 @@ textarea {
         background: var(--project-overlay-bg-mobile);
         border-color: var(--project-overlay-coating);
         box-shadow: inset 0 0 0 1px var(--project-overlay-coating), inset 0 0 32px var(--project-overlay-glow);
+    }
+
+    .project-details,
+    .project-details h3,
+    .project-details p,
+    .project-overlay .project-tags,
+    .project-actions {
+        opacity: 1 !important;
+        transform: translate(0) !important;
     }
 
     .project-card {
