@@ -1077,11 +1077,11 @@ body[data-theme='light'] .hero-role {
     background: #00758f;
 }
 
-.skill-card:nth-child(7)::before {
+.skill-card:nth-child(8)::before {
     background: #dc382d;
 }
 
-.skill-card:nth-child(8)::before {
+.skill-card:nth-child(7)::before {
     background: #61dafb;
 }
 

@@ -8,7 +8,7 @@
     const ROLES = [
         'Full-Stack Engineer',
         'UI/UX Enthusiast',
-        'Backend Specialist',
+        'Backend Craftsman',
         'Problem Solver'
     ];
 
@@ -37,9 +37,10 @@
     const PROJECTS = [
         // --- FULL STACK ---
         {
-            category: 'fullstack',
-            categoryLabel: 'Full Stack',
+            category: 'group',
+            categoryLabel: 'Group Projects',
             title: 'SmartDrive',
+            type: 'group',
             description: 'A React-based file management application featuring nested folders, file uploads, and a clean user interface.',
             image: 'images/smartdrive_pro.svg',
             alt: 'SmartDrive',
@@ -166,6 +167,20 @@
             alt: 'Grid Layouting',
             tags: ['HTML', 'CSS'],
             links: [{ label: 'Live Demo', href: 'https://prince-rajadurai.github.io/Grid-Layouting/' }, { label: 'Code', href: 'https://github.com/Prince-Rajadurai/Grid-Layouting', outline: true }]
+        },
+        {
+            category: 'group',
+            categoryLabel: 'Group Projects',
+            title: 'Ram Nath Kovind',
+            type: 'group',
+            description: 'A tribute webpage dedicated to the 14th President of India, built with semantic HTML and structured CSS.',
+            image: 'images/ram_nath_kovind_pro.svg',
+            alt: 'Ram Nath Kovind',
+            tags: ['HTML', 'CSS', 'JS'],
+            links: [
+                { label: 'Live Demo', href: 'https://hari786-master.github.io/Ram-Nath-Kovindh/' },
+                { label: 'Code', href: 'https://github.com/hari786-master/Ram-Nath-Kovindh', outline: true }
+            ]
         },
         // --- SCRATCH ---
         {
@@ -619,12 +634,18 @@
         const projectsGrid = document.getElementById('projectsGrid');
         if (!projectsGrid) return;
 
-        const filtered = category === 'all'
-            ? PROJECTS
-            : PROJECTS.filter((project) => project.category === category);
+        let filtered = [];
+        if (category === 'all') {
+            filtered = PROJECTS;
+        } else if (category === 'group') {
+            filtered = PROJECTS.filter((project) => project.type === 'group');
+        } else {
+            filtered = PROJECTS.filter((project) => project.category === category);
+        }
 
         const fragment = document.createDocumentFragment();
         filtered.forEach((project) => fragment.appendChild(createProjectCard(project)));
+
         projectsGrid.replaceChildren(fragment);
     }
 

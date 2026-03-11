@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Background Gradient (matches the dark neon portfolio style) -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Glowing Cyan Accents -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Light Accent -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+
+    <!-- Outer Glow -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Inner Glow -->
+    <filter id="glow-inner" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)" />
+
+  <!-- Subtle grid lines matching the futuristic aesthetic -->
+  <g stroke="rgba(56, 189, 248, 0.08)" stroke-width="2">
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <circle cx="400" cy="300" r="220" fill="none" />
+  </g>
+
+  <g transform="translate(400, 310)">
+    
+    <!-- Abstract architectural silhouette (like Rashtrapati Bhavan Dome/Pillars) -->
+    <!-- Base -->
+    <rect x="-140" y="100" width="280" height="20" rx="4" fill="url(#primaryGrad)" filter="url(#glow)"/>
+    <rect x="-140" y="100" width="280" height="20" rx="4" fill="url(#accentGrad)" />
+
+    <rect x="-120" y="80" width="240" height="20" rx="3" fill="url(#primaryGrad)" filter="url(#glow-inner)"/>
+    <rect x="-120" y="80" width="240" height="20" rx="3" fill="url(#primaryGrad)" opacity="0.8"/>
+
+    <!-- Pillars -->
+    <rect x="-100" y="-40" width="20" height="120" rx="2" fill="url(#primaryGrad)" filter="url(#glow)" />
+    <rect x="-100" y="-40" width="20" height="120" rx="2" fill="url(#accentGrad)" />
+    
+    <rect x="-40" y="-40" width="20" height="120" rx="2" fill="url(#primaryGrad)" filter="url(#glow)" />
+    <rect x="-40" y="-40" width="20" height="120" rx="2" fill="url(#accentGrad)" />
+
+    <rect x="20" y="-40" width="20" height="120" rx="2" fill="url(#primaryGrad)" filter="url(#glow)" />
+    <rect x="20" y="-40" width="20" height="120" rx="2" fill="url(#accentGrad)" />
+    
+    <rect x="80" y="-40" width="20" height="120" rx="2" fill="url(#primaryGrad)" filter="url(#glow)" />
+    <rect x="80" y="-40" width="20" height="120" rx="2" fill="url(#accentGrad)" />
+
+    <!-- Dome Structure -->
+    <path d="M-130,-40 L130,-40 L130,-60 L-130,-60 Z" fill="url(#primaryGrad)" filter="url(#glow-inner)" />
+    <path d="M-130,-40 L130,-40 L130,-60 L-130,-60 Z" fill="url(#primaryGrad)" opacity="0.9" />
+
+    <path d="M-100,-60 C-100,-150 100,-150 100,-60 Z" fill="none" stroke="url(#primaryGrad)" stroke-width="12" filter="url(#glow)"/>
+    <path d="M-100,-60 C-100,-150 100,-150 100,-60 Z" fill="none" stroke="url(#accentGrad)" stroke-width="4" />
+
+    <!-- Spire on Dome -->
+    <path d="M-10,-130 L10,-130 L5,-180 L-5,-180 Z" fill="url(#primaryGrad)" filter="url(#glow)"/>
+    <path d="M-10,-130 L10,-130 L5,-180 L-5,-180 Z" fill="url(#accentGrad)" />
+    
+    <circle cx="0" cy="-190" r="12" fill="url(#primaryGrad)" filter="url(#glow)"/>
+    <circle cx="0" cy="-190" r="8" fill="url(#accentGrad)" />
+
+    <!-- Star/Emblem behind the building -->
+    <g transform="translate(0, -70)">
+        <path d="M0,-50 L10,-15 L45,-15 L15,5 L25,40 L0,20 L-25,40 L-15,5 L-45,-15 L-10,-15 Z" fill="none" stroke="url(#primaryGrad)" stroke-width="4" filter="url(#glow)" opacity="0.6"/>
+        <path d="M0,-50 L10,-15 L45,-15 L15,5 L25,40 L0,20 L-25,40 L-15,5 L-45,-15 L-10,-15 Z" fill="none" stroke="url(#accentGrad)" stroke-width="1" opacity="0.8"/>
+    </g>
+
+  </g>
+</svg>
