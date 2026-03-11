@@ -33,12 +33,7 @@
 
   <rect width="800" height="600" fill="url(#bg)" />
 
-  <!-- Subtle grid lines matching the futuristic aesthetic -->
-  <g stroke="rgba(56, 189, 248, 0.08)" stroke-width="2">
-    <line x1="0" y1="300" x2="800" y2="300" />
-    <line x1="400" y1="0" x2="400" y2="600" />
-    <circle cx="400" cy="300" r="220" fill="none" />
-  </g>
+
 
   <g transform="translate(400, 310)">
     
